@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mordochka"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="{Binding ElementName=MainFrame, Path=Content.Title}" 
         Height="450" 
         MinHeight="400"
