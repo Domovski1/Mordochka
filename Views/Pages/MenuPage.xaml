@@ -20,7 +20,8 @@
     <Grid>
         <StackPanel VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-            <Button Content="Список клиентов"/>
+            <Button Content="Список клиентов" 
+                    Click="ClientsList_Btn"/>
         </StackPanel>
     </Grid>
 </Page>

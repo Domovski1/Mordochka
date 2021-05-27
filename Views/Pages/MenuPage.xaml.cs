@@ -24,5 +24,10 @@ namespace Mordochka.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void ClientsList_Btn(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ClientsPage());
+        }
     }
 }
