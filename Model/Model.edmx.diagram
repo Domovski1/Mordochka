@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b89192b2065d4721a4eb767317832f69" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="DemoBaseModel.Client" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoBaseModel.ClientService" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoBaseModel.ClientTag" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoBaseModel.Gender" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoBaseModel.Service" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoBaseModel.Tag" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="DemoBaseModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoBaseModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoBaseModel.FK_ClientTag_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoBaseModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoBaseModel.FK_ClientTag_Tag" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
