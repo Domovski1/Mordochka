@@ -16,7 +16,7 @@ namespace Mordochka.Views.Pages
         }
 
 
-        static ClientsPage clients = new ClientsPage();
+        ClientsPage clients = new ClientsPage();
         private void ClientsList_Btn(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(clients);

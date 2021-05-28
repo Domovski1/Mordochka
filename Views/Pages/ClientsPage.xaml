@@ -52,31 +52,34 @@
                   Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" 
-                                    Binding="{Binding ID}"
+                                    Binding="{Binding Client.ID}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Фамилия" 
-                                    Binding="{Binding FirstName}"
+                                    Binding="{Binding Client.FirstName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя" 
-                                    Binding="{Binding LastName}"
+                                    Binding="{Binding Client.LastName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество" 
-                                    Binding="{Binding Patronymic}"
+                                    Binding="{Binding Client.Patronymic}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Пол" 
-                                    Binding="{Binding Gender.Title}"
+                                    Binding="{Binding Client.Gender.Title}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Дата рождения" 
-                                    Binding="{Binding DateOfBirth}"
+                                    Binding="{Binding Client.DateOfBirth}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Телефон" 
-                                    Binding="{Binding PhoneNumber}"
+                                    Binding="{Binding Client.PhoneNumber}"
+                                    Width="*"/>
+                <DataGridTextColumn Header="Посещений" 
+                                    Binding="{Binding CountVisit}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Почта" 
-                                    Binding="{Binding Mail}"
+                                    Binding="{Binding Client.Mail}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Дата добаления" 
-                                    Binding="{Binding RegistrationDate}"
+                                    Binding="{Binding Client.RegistrationDate}"
                                     Width="*"/>
                 <DataGridTemplateColumn Header="Действие" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
