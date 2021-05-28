@@ -71,6 +71,7 @@
     <Compile Include="Model\Client.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\ClientPartial.cs" />
     <Compile Include="Model\ClientService.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
