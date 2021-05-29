@@ -22,6 +22,9 @@
                     HorizontalAlignment="Center">
             <Button Content="Список клиентов" 
                     Click="ClientsList_Btn"/>
+            <Button Content="Добавить клиента"
+                    Margin="0 5"
+                    Click="AddClient_Click"/>
         </StackPanel>
     </Grid>
 </Page>

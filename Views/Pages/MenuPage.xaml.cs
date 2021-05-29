@@ -21,5 +21,11 @@ namespace Mordochka.Views.Pages
         {
             NavigationService.Navigate(clients);
         }
+
+        ClientCreateUpdatePage newClient = new ClientCreateUpdatePage(new Model.Client());
+        private void AddClient_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(newClient);
+        }
     }
 }
