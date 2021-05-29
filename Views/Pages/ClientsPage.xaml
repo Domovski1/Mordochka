@@ -81,15 +81,6 @@
                 <DataGridTextColumn Header="Дата добаления" 
                                     Binding="{Binding Client.RegistrationDate}"
                                     Width="*"/>
-                <DataGridTemplateColumn Header="Действие" Width="*">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <Button Height="24" Width="100" Content="Удалить"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
 
@@ -108,7 +99,12 @@
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
             <Button Width="150" Height="24" Content="Предыдущие"/>
-            <Button Width="150" Height="24" Content="Редактировать" Margin="5 0"/>
+            <Button Width="150" Height="24" 
+                    Content="Редактировать"
+                    Margin="5 0 0 0"
+                    Click="UpdateClient_Click"
+                    />
+            <Button Width="150" Height="24" Content="Удалить" Margin="5 0"/>
             <Button Width="150" Height="24" Content="Следуюшие"/>
         </StackPanel>
 
