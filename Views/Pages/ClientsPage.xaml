@@ -35,6 +35,8 @@
                      TextChanged="Search_Txb_TextChanged"/>
 
             <ComboBox Width="100"
+                      x:Name="CmbCount"
+                      SelectionChanged="CmbCount_Changed"
                       Margin="10 0 0 0">
                 <ComboBoxItem Content="10"/>
                 <ComboBoxItem Content="50"/>
@@ -47,13 +49,15 @@
         
         <!--Вывод информации-->
         <DataGrid x:Name="Clients_Grid"
+                  CanUserAddRows="False"
                   AutoGenerateColumns="False"
                   SelectionMode="Single"
                   Grid.Row="1">
+            
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" 
                                     Binding="{Binding ID}"
-                                    Width="*"/>
+                                    Width="0.5*"/>
                 <DataGridTextColumn Header="Фамилия" 
                                     Binding="{Binding FirstName}"
                                     Width="*"/>
@@ -65,16 +69,17 @@
                                     Width="*"/>
                 <DataGridTextColumn Header="Пол" 
                                     Binding="{Binding Gender.Title}"
-                                    Width="*"/>
+                                    Width="0.8*"/>
                 <DataGridTextColumn Header="Дата рождения" 
-                                    Binding="{Binding DateOfBirth}"
+                                    Binding="{Binding BirthDay}"
+                                    
                                     Width="*"/>
                 <DataGridTextColumn Header="Телефон" 
                                     Binding="{Binding PhoneNumber}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Посещений" 
                                     Binding="{Binding CountVisit}"
-                                    Width="*"/>
+                                    Width="0.5*"/>
                 <DataGridTextColumn Header="Почта" 
                                     Binding="{Binding Mail}"
                                     Width="*"/>

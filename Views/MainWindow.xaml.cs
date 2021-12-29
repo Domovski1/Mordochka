@@ -15,3 +15,6 @@ namespace Mordochka
         }
     }
 }
+
+
+// Код 09.1.5_2
