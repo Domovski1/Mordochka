@@ -52,34 +52,34 @@
                   Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" 
-                                    Binding="{Binding Client.ID}"
+                                    Binding="{Binding ID}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Фамилия" 
-                                    Binding="{Binding Client.FirstName}"
+                                    Binding="{Binding FirstName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя" 
-                                    Binding="{Binding Client.LastName}"
+                                    Binding="{Binding LastName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество" 
-                                    Binding="{Binding Client.Patronymic}"
+                                    Binding="{Binding Patronymic}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Пол" 
-                                    Binding="{Binding Client.Gender.Title}"
+                                    Binding="{Binding Gender.Title}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Дата рождения" 
-                                    Binding="{Binding Client.DateOfBirth}"
+                                    Binding="{Binding DateOfBirth}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Телефон" 
-                                    Binding="{Binding Client.PhoneNumber}"
+                                    Binding="{Binding PhoneNumber}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Посещений" 
                                     Binding="{Binding CountVisit}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Почта" 
-                                    Binding="{Binding Client.Mail}"
+                                    Binding="{Binding Mail}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Дата добаления" 
-                                    Binding="{Binding Client.RegistrationDate}"
+                                    Binding="{Binding RegistrationDate}"
                                     Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
@@ -93,19 +93,33 @@
                    Text="17/230"
                    FontSize="16"
                    Name="Count_Tblock"/>
-
+        
+        
+    
+        <!--Нижняя панель с кнопками-->
         <StackPanel Grid.Row="2"
                     Orientation="Horizontal"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-            <Button Width="150" Height="24" Content="Предыдущие"/>
-            <Button Width="150" Height="24" 
+            
+            <Button Width="150" 
+                    Height="24" 
+                    Content="Предыдущие"/>
+            
+            <Button Width="150" 
+                    Height="24" 
                     Content="Редактировать"
                     Margin="5 0 0 0"
-                    Click="UpdateClient_Click"
-                    />
-            <Button Width="150" Height="24" Content="Удалить" Margin="5 0"/>
-            <Button Width="150" Height="24" Content="Следуюшие"/>
+                    Click="UpdateClient_Click"/>
+            
+            <Button Width="150" 
+                    Height="24" 
+                    Content="Удалить" 
+                    Margin="5 0"/>
+            
+            <Button Width="150" 
+                    Height="24" 
+                    Content="Следуюшие"/>
         </StackPanel>
 
     </Grid>
